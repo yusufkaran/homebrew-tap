@@ -5,21 +5,21 @@
 class Porttracker < Formula
   desc "Manage your localhost ports and dev server processes"
   homepage "https://github.com/yusufkaran/porttracker"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yusufkaran/porttracker/releases/download/v0.1.1/porttracker_0.1.1_darwin_amd64.tar.gz"
-      sha256 "681403ff3c1ddbf2f1ebd79e8809084e4818a9d89089b4b4d8867ae0fd22b82b"
+      url "https://github.com/yusufkaran/porttracker/releases/download/v0.1.2/porttracker_0.1.2_darwin_amd64.tar.gz"
+      sha256 "bbb35da3da8e7f6e4fe242c1b9d29fc4d3aac59dd594f437cb10b717a8d4c612"
 
       define_method(:install) do
         bin.install "pt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yusufkaran/porttracker/releases/download/v0.1.1/porttracker_0.1.1_darwin_arm64.tar.gz"
-      sha256 "edae5f32d17212e246dedea8af0d1d0bc635446cabaccb608c210ddc7edb6258"
+      url "https://github.com/yusufkaran/porttracker/releases/download/v0.1.2/porttracker_0.1.2_darwin_arm64.tar.gz"
+      sha256 "edb8facf595a8b1dcba26e9f9949d60c2469e76f899281cae319223150526da9"
 
       define_method(:install) do
         bin.install "pt"
@@ -29,15 +29,15 @@ class Porttracker < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yusufkaran/porttracker/releases/download/v0.1.1/porttracker_0.1.1_linux_amd64.tar.gz"
-      sha256 "d0e7d459b9ae213647cad2dc52ffc0a42250429d6dee3b5934d5724149c51dc3"
+      url "https://github.com/yusufkaran/porttracker/releases/download/v0.1.2/porttracker_0.1.2_linux_amd64.tar.gz"
+      sha256 "8c5e5e94b6f1418ca952f9196e3976ed012c5bdc33b625cf8d4d1fcad7a92928"
       define_method(:install) do
         bin.install "pt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yusufkaran/porttracker/releases/download/v0.1.1/porttracker_0.1.1_linux_arm64.tar.gz"
-      sha256 "c07c4028303903fef2e47b2c39bac3315c28547ebc66c4f2fe1d303106d6db21"
+      url "https://github.com/yusufkaran/porttracker/releases/download/v0.1.2/porttracker_0.1.2_linux_arm64.tar.gz"
+      sha256 "d16d1b20d811318b2f0587ce00da53e51e98a36fb9e84b131eec7576c82c9070"
       define_method(:install) do
         bin.install "pt"
       end
